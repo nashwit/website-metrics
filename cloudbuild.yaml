@@ -1,0 +1,13 @@
+steps:
+  # Install the Angular CLI
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install', '-g', '@angular/cli']
+
+  # Build the Angular app
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+
+  # Deploy the built app to App Engine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy']
+    env: ['PROJECT_ID=charming-storm-373407']
