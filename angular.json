@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lead-autostar-data-presentation": {
+    "webmet": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lead-autostar-data-presentation",
+            "outputPath": "dist/webmet",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lead-autostar-data-presentation:build"
+            "browserTarget": "webmet:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "lead-autostar-data-presentation:build:production"
+              "browserTarget": "webmet:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lead-autostar-data-presentation:build"
+            "browserTarget": "webmet:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "lead-autostar-data-presentation:serve"
+            "devServerTarget": "webmet:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "lead-autostar-data-presentation:serve:production"
+              "devServerTarget": "webmet:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "lead-autostar-data-presentation",
+  "defaultProject": "webmet",
   "cli": {
     "analytics": "b2531c1c-d364-4ef6-8913-1bac0162c156"
   }
