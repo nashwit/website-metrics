@@ -3,6 +3,10 @@ steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install', '-g', '@angular/cli']
 
+  # Install the dependencies 
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+    
   # Build the Angular app
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
